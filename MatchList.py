@@ -5,7 +5,7 @@ import sys
 
 team = sys.argv[1]
 
-urlStructure = "https://api.vexdb.io/v1/get_matches?season=Turning%20Point&sku=RE-VRC-19-7004&team="
+urlStructure = "https://api.vexdb.io/v1/get_matches?season=Turning%20Point&sku=RE-VRC-18-6082&team="
 response = urllib.request.urlopen(urlStructure + team)
 results = json.loads(response.read())["result"]
 
