@@ -9,6 +9,9 @@ urlStructure = "https://api.vexdb.io/v1/get_matches?season=Turning%20Point&sku=R
 response = urllib.request.urlopen(urlStructure + team)
 results = json.loads(response.read())["result"]
 
+for r in results:
+    print(r)
+
 allMatches = []
 
 enemyMatches = { }
